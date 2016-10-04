@@ -1,14 +1,18 @@
-# natbox
+# voip
 
-A Clojure library designed to ... well, that part is up to you.
+A simple voip system written in clojure
 
 ## Usage
 
-FIXME
+Start server on port 8000
+`java -jar voip.jar server 8000`
+
+Start client with hostname "alexisvincent" and connect to server at localhost:8000
+`java -jar voip.jar client localhost 8000 alexisvincent`
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 Alexis Vincent
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
