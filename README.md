@@ -5,9 +5,11 @@ A simple voip system written in clojure
 ## Usage
 
 Start server on port 8000
+
 `java -jar voip.jar server 8000`
 
 Start client with hostname "alexisvincent" and connect to server at localhost:8000
+
 `java -jar voip.jar client localhost 8000 alexisvincent`
 
 ## License
