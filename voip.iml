@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module cursive.leiningen.project.LeiningenProjectsManager.displayName="natbox:0.1.0-SNAPSHOT" cursive.leiningen.project.LeiningenProjectsManager.isLeinModule="true" type="JAVA_MODULE" version="4">
+<module cursive.leiningen.project.LeiningenProjectsManager.displayName="voip:0.1.0-SNAPSHOT" cursive.leiningen.project.LeiningenProjectsManager.isLeinModule="true" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/classes" />
@@ -28,12 +28,13 @@
     <orderEntry type="library" name="Leiningen: com.taoensso/encore:2.68.0" level="project" />
     <orderEntry type="library" name="Leiningen: com.taoensso/nippy:2.12.1" level="project" />
     <orderEntry type="library" name="Leiningen: com.taoensso/truss:1.3.4" level="project" />
+    <orderEntry type="library" name="Leiningen: gloss:0.2.5" level="project" />
     <orderEntry type="library" name="Leiningen: io.aleph/dirigiste:0.1.4" level="project" />
     <orderEntry type="library" name="Leiningen: io.netty/netty-all:4.1.0.Final" level="project" />
     <orderEntry type="library" name="Leiningen: kovacnica/clojure.network.ip:0.1.1" level="project" />
     <orderEntry type="library" name="Leiningen: manifold:0.1.5" level="project" />
     <orderEntry type="library" name="Leiningen: net.jpountz.lz4/lz4:1.3" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.8.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.9.0-alpha13" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/clojurescript:1.7.122" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.cache:0.6.3" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.match:0.3.0-alpha4" level="project" />
@@ -42,10 +43,11 @@
     <orderEntry type="library" name="Leiningen: org.clojure/data.priority-map:0.0.2" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/google-closure-library-third-party:0.0-20150805-acd8b553" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/google-closure-library:0.0-20150805-acd8b553" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/java.classpath:0.2.3" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.analyzer.jvm:0.6.5" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.analyzer:0.6.4" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.logging:0.3.1" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/tools.namespace:0.2.11" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/tools.namespace:0.3.0-alpha3" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.nrepl:0.2.12" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/tools.reader:0.10.0" level="project" />
     <orderEntry type="library" name="Leiningen: org.iq80.snappy/snappy:0.4" level="project" />

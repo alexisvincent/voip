@@ -11,9 +11,6 @@
     [voip.core.util :as util]))
 
 
-(def server-args ["server" "8000"])
-(def client-args ["client" "localhost" "8000" "hostname"])
-
 (def args [])
 
 (def repl-instance nil)
@@ -22,16 +19,18 @@
   "Creates and initializes the system under development in the Var
   #'system."
   []
-  (alter-var-root #'repl-instance (constantly
-                                    (do
-                                      (util/prompt
-                                        #(do
-                                          (alter-var-root
-                                            #'args
-                                            (constantly (if (or (= % "s") (= % "")) server-args client-args)))
-                                          false)
-                                        "client [hostname] or server [s]: (s) ")
-                                      (apply kernel/init args)))))
+  (let [server-args ["server" "8000"]
+        client-args ["client" "localhost" "8000" (str (util/aquire-port (into '() (map #(+ 8001 %) (range 3)))))]]
+    (alter-var-root #'repl-instance (constantly
+                                      (do
+                                        (util/prompt
+                                          #(do
+                                            (alter-var-root
+                                              #'args
+                                              (constantly (if (or (= % "s") (= % "")) server-args (vec (conj client-args %)))))
+                                            false)
+                                          "client [hostname] or server [s]: (s) ")
+                                        (apply kernel/init args))))))
 
 (defn start
   "Starts the system running, updates the Var #'system."
