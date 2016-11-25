@@ -1,4 +1,4 @@
-# VOIP - Multi Channel Voice over IP
+# Multi Channel Voice over IP (CS354)
 
 Alexis Vincent - 18680666
 
